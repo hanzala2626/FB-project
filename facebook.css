@@ -14,7 +14,7 @@ main {
     display: flex;
     flex-direction: column;
 
-    height: 76vh;
+    height: 78vh;
     width: 80vw;
     position: relative;
     margin: 0 auto;
@@ -26,13 +26,14 @@ main {
     align-items: flex-start;
     width: 80%;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+   /* margin-top: 28px; */
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
 }
 
 .col-logo {
-    flex: 0 0 50%;
+    
     text-align: left;
 }
 
@@ -50,6 +51,7 @@ h4{
     
 }
 .h4-anker{
+    text-decoration: none;
     color: rgb(38, 28, 182);
 }
 
@@ -61,7 +63,7 @@ h4{
 
 
 .col-form {
-    flex: 0 0 40%;
+    
     text-align: center;
 }
 
@@ -70,7 +72,7 @@ h4{
 }
 
 .col-logo h2 {
-    font-size: 26px;
+    font-size: 23px;
     font-weight: 400;
     padding: 0px 20px;
     line-height: 32px;
@@ -79,7 +81,6 @@ h4{
 .col-form .form-container {
     background-color: rgba(255, 255, 255, 0.952);
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1), 0 8px 16px rgb(0, 0, 0, 0.1);
     box-sizing: border-box;
     margin-bottom: 20px;
     padding: 20px;
@@ -91,7 +92,6 @@ h4{
     width: 100%;
     margin: 5px 0;
     height: 45px;
-    vertical-align: middle;
     font-size: 16px;
 }
 
@@ -103,19 +103,16 @@ h4{
     outline: none;
 }
 
-.col-form .form-container input:focus, .col-form .form-container input:active {
-    border-color: #1877f2;
-    box-shadow: 0 0 0 2px #e7f3ff;
-}
 
 .col-form .form-container .btn-login {
     background-color: #1877f2;
     border: none;
     border-radius: 6px;
-    font-size: 20px;
+    font-size: 18px;
     padding: 0 16px;
     color: #ffffff;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .col-form .form-container a {
@@ -132,26 +129,14 @@ h4{
     border: none;
     border-radius: 6px;
     font-size: 17px;
-    line-height: 48px;
+    line-height:42px;
     padding: 0 16px;
     color: #ffffff;
     font-weight: 700;
     margin-top: 20px;
+    cursor: pointer;
 }
 
-.col-form>p {
-    font-size: 14px;
-    max-width: 400px;
-}
-
-.col-form>p a {
-    color: #1c1e21;
-    text-decoration: none;
-}
-
-.col-form>p a:hover {
-    text-decoration: underline;
-}
 
 .footer-container{
     background: #5270e949;
@@ -174,15 +159,7 @@ footer ol:first-child {
     border-bottom: 1px solid #dddfe2;
 }
 
-footer ol:first-child li:last-child button {
-    background-color: #f5f6f7;
-    border: 1px solid #ccd0d5;
-    outline: none;
-    color: #4b4f56;
-    padding: 0 8px;
-    font-weight: 700;
-    font-size: 16px;
-}
+
 
 footer ol li {
     padding-right: 15px;
@@ -197,15 +174,7 @@ footer ol li a {
     text-decoration: none;
 }
 
-footer ol li a ::after{
-    height: 6px;
-    width: 20px;
-}
 
-footer ol li a:hover {
-   border-radius: 15px;
-   background-image: linear-gradient(to right teal yellow);
-}
 
 small {
     font-size: 11px;
